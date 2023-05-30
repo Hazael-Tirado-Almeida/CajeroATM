@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cajero automatico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id = "mainTittle">App Cajero ATM</h1>
+        <form id="login-form">
+            <div>
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" required>
+            </div>
+            <button id = "button" type="submit" onclick="login()">Iniciar sesión</button>
+        </form>
+        <div id="account-area" style="display: none;">
+            <h2>Bienvenido, <span id="username-display"></span>!</h2>
+            <p>Saldo actual: <span id="balance-display"></span> pesos</p>
+            <button class="button" id="withdraw-btn">Retirar efectivo</button>
+            <button class="button" id="deposit-btn">Depositar efectivo</button>
+            <button class="button" id="balance-btn">Consultar saldo</button>
+            <button class="button" id="logout-btn">Salir de la cuenta</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
